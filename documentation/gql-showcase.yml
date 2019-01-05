@@ -1,0 +1,67 @@
+swagger: '2.0'
+info:
+  version: '1.0'
+  title: Warung Pintar REST-GQL Showcase
+  description: 'Showcase !'
+host: localhost:4005
+basePath: /api
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+#API Shape
+paths:
+  /posts:
+    get:
+      summary: Get all posts
+      description: Get all the posts !
+      tags:
+        - Post
+      operationId: getPost
+      responses:
+        200:
+          description: OK
+  /people:
+    get:
+      summary: Get all people
+      description: Get all the people !
+      tags:
+        - People
+      operationId: getPeople
+      responses:
+        200:
+          description: OK
+  /people/{id}:
+    get:
+      description: Get people based on id
+      summary: Get people detail by id !
+      tags:
+        - People
+      operationId: getPeopleById
+      parameters:
+        - name: id
+          in: path
+          required: true
+          type: number
+          description: Numeric ID of the person to get
+      responses:
+        200:
+          description: OK
+  /people/{id}/likedposts:
+    get:
+      description: Get person liked posts
+      summary: Get person liked posts !
+      tags:
+        - People
+      operationId: getPersonLikedPosts
+      parameters:
+        - name: id
+          in: path
+          required: true
+          type: number
+          description: Numeric ID of the person to get
+      responses:
+        200:
+          description: OK

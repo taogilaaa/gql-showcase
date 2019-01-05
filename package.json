@@ -1,0 +1,31 @@
+{
+  "name": "gql-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "babel src --ignore \"_*\" --out-dir lib",
+    "lint": "eslint . --max-warnings 0",
+    "serve": "nodemon src/main.js --exec babel-node",
+    "start": "npm run serve"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "graphql-yoga": "^1.16.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "eslint": "^5.4.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "nodemon": "^1.14.12",
+    "prettier-eslint": "^8.8.1",
+    "prettier-eslint-cli": "^4.7.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
