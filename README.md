@@ -98,6 +98,8 @@ The server returns the following response:
 }
 ```
 
+Swagger documentation can be found inside `documentation` folder
+
 **Deployment:**
 
 We can deploy the existing solution by installing [Zeit now](https://zeit.co/now) then running `now`
